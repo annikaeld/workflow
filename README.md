@@ -1,6 +1,7 @@
 # Workflow repo for the CA
 
 
+
 ## Tech Stack & Tools
 
 - **Tailwind CSS** – Utility-first CSS framework for rapid UI development.
@@ -8,6 +9,7 @@
 - **Prettier** – Code formatter for consistent style across files.
 - **Husky** – Git hooks for enforcing code quality before commits and pushes.
 - **Vitest** – Unit testing framework for modern JavaScript projects.
+- **Playwright** – End-to-end testing framework for web apps.
 
 
 ## Usage & Commands
@@ -41,11 +43,34 @@
 - Husky will automatically run checks (like linting or formatting) before commits.
 
 
+
 ### Vitest
 - To run tests, use:
 	```
 	npm test
 	```
-
 - Add your test files following Vitest conventions (e.g., `*.test.js`).
+
+### Playwright
+- Playwright is used for end-to-end browser testing.
+- To run Playwright tests, use:
+	```
+	npx playwright test
+	```
+- To open the Playwright test runner UI:
+	```
+	npx playwright test --ui
+	```
+- To run tests and show the actual browser windows (headed mode):
+	```
+	npx playwright test --headed
+	```
+	# Shows the actual browser windows while tests run - useful to see what's happening
+- To run tests step by step for debugging:
+	```
+	npx playwright test --debug
+	```
+	# Runs tests step by step - helpful when tests fail and you need to see why
+- Test files are usually located in the `tests` or `e2e` directory and follow the `.spec.js` or `.test.js` naming convention.
+- See [Playwright documentation](https://playwright.dev/docs/intro) for more details.
 
