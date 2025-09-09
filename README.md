@@ -49,7 +49,3 @@
 
 - Add your test files following Vitest conventions (e.g., `*.test.js`).
 
-> Make sure you have installed all dependencies with:
-> ```
-> npm install
-> ```
