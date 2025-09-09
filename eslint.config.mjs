@@ -19,6 +19,7 @@ export default [
         require: true, // Used in Node.js files like Tailwind config
         module: true, // Used in Node.js files like Tailwind config
         process: true, // Used for environment variables later
+        global: true, // Used in some test setups
       },
     },
   },
