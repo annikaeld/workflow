@@ -1,7 +1,9 @@
 import { test, expect } from "@playwright/test";
 
 test.describe("navigate", async () => {
-  test("user can navigate to homepage", async ({ page }) => {
+  test("user can navigate to homepage and click on the first venue", async ({
+    page,
+  }) => {
     // Go to homepage
     await page.goto("/");
 

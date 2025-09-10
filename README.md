@@ -51,6 +51,7 @@
 	```
 - Add your test files following Vitest conventions (e.g., `*.test.js`).
 
+
 ### Playwright
 - Playwright is used for end-to-end browser testing.
 - To run Playwright tests, use:
@@ -70,5 +71,11 @@
 	npx playwright test --debug
 	```
 - Test files are usually located in the `tests` or `e2e` directory and follow the `.spec.js` or `.test.js` naming convention.
+- **Environment variables for Playwright tests:**
+	Add a `.env` file in your project root with:
+	```
+	TEST_USER_EMAIL=email
+	TEST_USER_PASSWORD=password
+	```
 - See [Playwright documentation](https://playwright.dev/docs/intro) for more details.
 
