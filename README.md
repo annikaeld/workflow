@@ -65,12 +65,10 @@
 	```
 	npx playwright test --headed
 	```
-	# Shows the actual browser windows while tests run - useful to see what's happening
 - To run tests step by step for debugging:
 	```
 	npx playwright test --debug
 	```
-	# Runs tests step by step - helpful when tests fail and you need to see why
 - Test files are usually located in the `tests` or `e2e` directory and follow the `.spec.js` or `.test.js` naming convention.
 - See [Playwright documentation](https://playwright.dev/docs/intro) for more details.
 
